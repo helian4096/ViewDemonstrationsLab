@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">View Demonstrations Lab</string>
+    <string name="wow">Wow!</string>
+    <string name="message">Welcome.</string>
+    <string name="the_tra_phrase">Are you having fun?</string>
+    <string name="the_answer">I certainly hope so!</string>
+</resources>
