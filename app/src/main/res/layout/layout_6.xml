@@ -6,4 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scroll_guide"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent="0.25"
+        android:orientation="horizontal" />
+    <HorizontalScrollView
+        android:id="@+id/scroller"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="@id/scroll_guide"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/bouton1001"
+                android:text="@string/wow"
+                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+            <Button
+                android:id="@+id/bouton1002"
+                android:text="@string/wow"
+                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintLeft_toRightOf="@id/bouton1001" />
+            <Button
+                android:id="@+id/bouton1003"
+                android:text="@string/wow"
+                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintLeft_toRightOf="@id/bouton1002" />
+            <Button
+                android:id="@+id/bouton1004"
+                android:text="@string/wow"
+                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintLeft_toRightOf="@id/bouton1003" />
+            <Button
+                android:id="@+id/bouton1005"
+                android:text="@string/wow"
+                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintLeft_toRightOf="@id/bouton1004" />
+            <Button
+                android:id="@+id/bouton1006"
+                android:text="@string/wow"
+                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintLeft_toRightOf="@id/bouton1005" />
+            <Button
+                android:id="@+id/bouton1007"
+                android:text="@string/wow"
+                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintLeft_toRightOf="@id/bouton1006" />
+        </LinearLayout>
+    </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
