@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
     <Button
@@ -17,7 +17,7 @@
         />
     <ScrollView
         android:id="@+id/nested_scroll"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="1000dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -25,7 +25,7 @@
         app:layout_constraintTop_toBottomOf="@id/nested_button">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -79,7 +79,24 @@
                 android:layout_height="50dp"
                 android:text="@string/the_answer"
                 app:layout_constraintTop_toBottomOf="@id/checkbox7"/>
-
+            <CheckBox
+                android:id="@+id/checkbox9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/the_answer"
+                app:layout_constraintTop_toBottomOf="@id/checkbox8"/>
+            <CheckBox
+                android:id="@+id/checkbox10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/the_tra_phrase"
+                app:layout_constraintTop_toBottomOf="@id/checkbox9"/>
+            <CheckBox
+                android:id="@+id/checkbox11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/app_name"
+                app:layout_constraintTop_toBottomOf="@id/checkbox10"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
