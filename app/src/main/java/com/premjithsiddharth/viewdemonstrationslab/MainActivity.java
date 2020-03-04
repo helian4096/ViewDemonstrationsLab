@@ -19,7 +19,11 @@ public class MainActivity extends AppCompatActivity {
         count = 0;
     }
     public void clickThrough(View v){
-        count = (count++)%(files.length);
+        count++;
+        if(count >= files.length){
+            count = 0;
+        }
+        System.out.println(count);
         setContentView(files[count]);
     }
 

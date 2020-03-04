@@ -20,7 +20,7 @@
         android:layout_height="70dp"
         android:layout_width="140dp"
         android:text="@string/message"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:background="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,6 +28,7 @@
     <Button
         android:id="@+id/buttonA"
         android:layout_height="70dp"
+        android:layout_width="wrap_content"
         android:text="@string/the_tra_phrase"
         android:textSize="20dp"
         app:layout_constraintTop_toBottomOf="@id/text3"
